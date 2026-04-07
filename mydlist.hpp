@@ -13,7 +13,7 @@ public:
     	{
         	e = nullptr;
         	n = nullptr;
-        	p = nullptr;
+       		p = nullptr;
     	}
 
 
@@ -66,12 +66,12 @@ public:
 
 	MyNode<T>* getHeadNode()
 	{
-		return head;
+		return head->getNext();
 	}
 
 	MyNode<T>* getTailNode()
 	{
-		return tail;
+		return tail->getPrev();
 	}
 
 	void addToHead(T* in)
